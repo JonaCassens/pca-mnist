@@ -1,6 +1,6 @@
-# Coursework C: Principal Component Analysis (PCA) and MNIST Classification
+# Principal Component Analysis (PCA) and MNIST Classification
 
-This repository contains **CourseworkC.ipynb**, which explores the application of Principal Component Analysis (PCA) for dimensionality reduction within a machine learning context.
+This repository contains **PCA-MNIST.ipynb**, which explores the application of Principal Component Analysis (PCA) for dimensionality reduction within a machine learning context.
 
 ## Overview
 
@@ -26,33 +26,5 @@ The notebook requires the following standard Python libraries:
 
 ---
 
-## 2. `CourseworkD_21019291.ipynb` (Double Pendulum Prediction)
 
-### Description (for file summary/commit)
-Coursework D for "Practical Machine Learning for Physicists." This notebook models the chaotic dynamics of a double pendulum using Lagrangian mechanics and applies a Recurrent Neural Network (RNN/LSTM) to predict its future state. A core challenge is predicting the full system state based on incomplete input data (position of only the lower mass).
 
-```markdown
-# Coursework D: Predicting Chaotic Systems with Machine Learning (Double Pendulum)
-
-This repository contains **CourseworkD_21019291.ipynb**, which explores the use of machine learning to model and predict the behaviour of a chaotic dynamical system.
-
-## Overview
-
-The project focuses on the classic physics problem of the **double pendulum**. The notebook is structured to:
-
-1.  **Physics Simulation:** Use Lagrangian mechanics to derive the equations of motion (EOMs) for the double pendulum and simulate its chaotic, non-linear dynamics numerically (e.g., using `solve_ivp`).
-2.  **Data Generation:** Generate high-fidelity time-series data for the pendulum's state variables (angles and angular velocities).
-3.  **Machine Learning Task:** Train a **Recurrent Neural Network (RNN)**, specifically an **LSTM**, to predict the future state of the system.
-4.  **Incomplete Information Challenge:** Critically, the model is trained to predict the full system state (four variables: $\theta_1$, $\dot{\theta}_1$, $\theta_2$, $\dot{\theta}_2$) using only *partial* input data, such as the position of the lower mass.
-
-## Goal
-
-The aim is to assess the efficacy and robustness of sequence prediction models (LSTMs) in forecasting the complex, chaotic evolution of a physics system, especially when facing the challenge of incomplete or noisy observational data.
-
-## Requirements
-
-The notebook requires the following standard Python libraries:
-* `numpy`
-* `matplotlib`
-* `scipy.integrate` (for `solve_ivp`)
-* `tensorflow` / `keras` (for building and training the LSTM model)
